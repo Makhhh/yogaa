@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yoga and Pilates Studio: Hatha, Hot Yoga and Pilates classes. Sign up for a free lesson.">
+  <title>Yoga and Pilates Studio Landing Page</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <img src="images/logo.svg" alt="">
+      <strong>Stillpoint Studio</strong>
+    </a>
+    <input type="checkbox" id="menu-toggle" class="visually-hidden" aria-label="Open menu">
+    <label class="burger" for="menu-toggle"><span></span></label>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#practices">Practices</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#about">About the Studio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Find Inner Balance and Strength</h1>
+      <p>Hatha, Hot Yoga and Pilates in small groups, with coaches who adjust every class to your level.</p>
+      <a class="cta" href="#signup">Sign Up for a Free Lesson</a>
+    </section>
+
+    <section class="grid" id="practices" aria-labelledby="practices-title">
+      <h2 id="practices-title">Practices</h2>
+      <article class="card">
+        <h3>Hatha</h3>
+        <p class="level" aria-label="Difficulty 2 of 5"><span class="on"></span><span class="on"></span><span></span><span></span><span></span> Beginner</p>
+        <p>Slow, steady poses and breathing. The best place to start.</p>
+        <p class="time">Tue and Thu, 09:00, 60 min</p>
+      </article>
+      <article class="card">
+        <h3>Hot Yoga</h3>
+        <p class="level" aria-label="Difficulty 3 of 5"><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span> Intermediate</p>
+        <p>A flowing sequence in a heated hall to build flexibility and stamina.</p>
+        <p class="time">Mon, Wed and Fri, 19:00, 75 min</p>
+      </article>
+      <article class="card">
+        <h3>Pilates</h3>
+        <p class="level" aria-label="Difficulty 4 of 5"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span> Intermediate to advanced</p>
+        <p>Core control, posture and precise movement on mats and reformers.</p>
+        <p class="time">Sat and Sun, 10:00, 60 min</p>
+      </article>
+    </section>
+
+    <section class="grid tinted" id="schedule" aria-labelledby="schedule-title">
+      <h2 id="schedule-title">Schedule</h2>
+      <article class="card">
+        <h3>Morning</h3>
+        <p class="big">08:00 to 09:00</p>
+        <p>Hatha and Pilates</p>
+        <p class="time">Monday to Friday</p>
+      </article>
+      <article class="card">
+        <h3>Evening</h3>
+        <p class="big">19:00 to 20:15</p>
+        <p>Hot Yoga and Pilates</p>
+        <p class="time">Monday to Saturday</p>
+      </article>
+      <article class="card">
+        <h3>Weekend</h3>
+        <p class="big">10:00 to 11:30</p>
+        <p>Open class for all levels</p>
+        <p class="time">Saturday and Sunday</p>
+      </article>
+    </section>
+
+    <section class="grid" id="prices" aria-labelledby="prices-title">
+      <h2 id="prices-title">Prices</h2>
+      <article class="card">
+        <h3>Single class</h3>
+        <p class="big">6 000 KZT</p>
+        <p>One class in any practice.</p>
+      </article>
+      <article class="card">
+        <h3>Monthly</h3>
+        <p class="big">38 000 KZT</p>
+        <p>8 classes per month, any practice.</p>
+      </article>
+      <article class="card">
+        <h3>Unlimited</h3>
+        <p class="big">62 000 KZT</p>
+        <p>Every class in the schedule for one month.</p>
+      </article>
+    </section>
+
+    <section class="grid tinted" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About the Studio</h2>
+      <article class="card coach">
+        <img src="images/coach-1.svg" alt="Portrait of Aigerim S.">
+        <h3>Aigerim S.</h3>
+        <p>Hatha and breathwork. 9 years of practice.</p>
+      </article>
+      <article class="card coach">
+        <img src="images/coach-2.svg" alt="Portrait of Daniyar K.">
+        <h3>Daniyar K.</h3>
+        <p>Hot Yoga. Certified coach, 6 years of teaching.</p>
+      </article>
+      <article class="card coach">
+        <img src="images/coach-3.svg" alt="Portrait of Madina T.">
+        <h3>Madina T.</h3>
+        <p>Pilates. Rehabilitation specialist.</p>
+      </article>
+    </section>
+
+    <section class="signup" id="signup" aria-labelledby="signup-title">
+      <h2 id="signup-title">Sign up for a free lesson</h2>
+      <form action="#signup" method="get">
+        <label>
+          Full Name
+          <input type="text" name="fullname" placeholder="Aigerim Sadykova" required minlength="3" autocomplete="name">
+          <small class="hint">Enter at least 3 characters.</small>
+        </label>
+        <label>
+          Phone
+          <input type="tel" name="phone" placeholder="+7 700 123 45 67" required pattern="\+?[0-9 \(\)\-]{10,18}" autocomplete="tel">
+          <small class="hint">Use a phone number like +7 700 123 45 67.</small>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="name@example.com" required autocomplete="email">
+          <small class="hint">Enter a valid email address.</small>
+        </label>
+
+        <fieldset>
+          <legend>Preferred time</legend>
+          <label class="pill"><input type="radio" name="time" value="morning" required> Morning</label>
+          <label class="pill"><input type="radio" name="time" value="evening"> Evening</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Current level</legend>
+          <label class="pill"><input type="radio" name="level" value="beginner" required> Beginner</label>
+          <label class="pill"><input type="radio" name="level" value="intermediate"> Intermediate</label>
+          <label class="pill"><input type="radio" name="level" value="advanced"> Advanced</label>
+        </fieldset>
+
+        <button type="submit">Book my free lesson</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <section aria-labelledby="footer-nav-title">
+      <h2 id="footer-nav-title">Menu</h2>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="#practices">Practices</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#prices">Prices</a></li>
+          <li><a href="#about">About the Studio</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section aria-labelledby="footer-loc-title">
+      <h2 id="footer-loc-title">Our halls</h2>
+      <address>
+        Hall A: Abay Avenue 150, Almaty<br>
+        Hall B: Dostyk Avenue 85, Almaty<br>
+        Open daily 07:30 to 21:30
+      </address>
+    </section>
+
+    <section aria-labelledby="footer-rules-title">
+      <h2 id="footer-rules-title">Attendance rules</h2>
+      <ul>
+        <li>Arrive 10 minutes before class.</li>
+        <li>Bring your own mat and a towel.</li>
+        <li>Cancel at least 4 hours ahead.</li>
+      </ul>
+    </section>
+
+    <section class="legal" aria-labelledby="footer-legal-title">
+      <h2 id="footer-legal-title">Legal information</h2>
+      <p>© 2026 Stillpoint Studio. All rights reserved. Classes are not a substitute for medical advice.</p>
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle" class="visually-hidden">
+        <span class="track"></span>
+        Dark mode
+      </label>
+    </section>
+  </footer>
+
+</body>
+</html>
