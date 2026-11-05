@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Coach portrait placeholder">
+  <circle cx="48" cy="48" r="48" fill="#E3DEF3"/>
+  <circle cx="48" cy="38" r="15" fill="#3E6B5C" opacity="0.85"/>
+  <path d="M18 84c4-18 16-26 30-26s26 8 30 26z" fill="#3E6B5C" opacity="0.85"/>
+</svg>
